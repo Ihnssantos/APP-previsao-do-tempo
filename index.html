@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo - Black em Dobro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="stylesheet" href="./src/css/estilos.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="busca">
+            <input type="text" id="input-busca" placeholder="Digite uma cidade">
+
+            <button class="btn-busca">
+                <img class="lupa" src="src/imagens/lupa.png" alt="lupa da busca">
+        </div>
+        <div class="informacao-principal">
+            <h1 id="cidade">Use a lupa acima para ver o clima em uma cidade</h1>
+
+            <p class="temperatura" id="temperatura"></p>
+
+            <img id="icone-condicao"
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png?_gl=1*sfdtad*_ga*MTI3MDk5NTc4MC4xNzM3NDE3MzY5*_ga_37GXT4VGQK*MTczOTQ5MTEzMC4zMC4xLjE3Mzk0OTEyNjYuMC4wLjA."
+                alt="icone condição do clima">
+
+            <p class="condiçao" id="condiçao"></p>
+        </div>
+        <div class="informacao-secundaria">
+            <div class="humidade">
+                <span>Humidade</span>
+                <span id="humidade">--</span>
+            </div>
+
+            <div class="velocidade-do-vento">
+                <span>Velocidade do vento</span>
+                <span id="velocidade-do-vento">--</span>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
